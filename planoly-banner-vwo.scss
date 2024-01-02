@@ -1,7 +1,7 @@
-body {
-  padding: 0;
-  margin: 0;
-}
+// body {
+//   padding: 0;
+//   margin: 0;
+// }
 .pl-vwo-banner {
   padding: 169px 0 209px 0;
   background-color: #3b4915;
@@ -59,7 +59,7 @@ body {
       span {
         color: #ffc3ea;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 700;
         line-height: 120%;
         letter-spacing: -1px;
       }
@@ -165,8 +165,6 @@ body {
   }
 
   &--right {
-    // width: 490px;
-    // height: 434px;
     flex: none;
   }
 
