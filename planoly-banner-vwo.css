@@ -158,6 +158,11 @@
 .pl-vwo-banner--right {
   flex: none;
 }
+@media screen and (max-width: 767px) {
+  .pl-vwo-banner--right {
+    display: none;
+  }
+}
 .pl-vwo-banner--image {
   position: relative;
   overflow: hidden;
