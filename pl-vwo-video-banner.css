@@ -1,0 +1,194 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: blue;
+}
+
+.banner-container {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-wrap iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.video-wrap video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.banner-content .pl-vwo-video-banner {
+  padding: 180px 0;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  .banner-content .pl-vwo-video-banner {
+    padding: 174px 0 190px 0;
+  }
+}
+.banner-content .pl-vwo-video-banner * {
+  box-sizing: border-box;
+}
+.banner-content .pl-vwo-video-banner--container {
+  max-width: 690px;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner-content .pl-vwo-video-banner--title {
+  margin: 0 0 31px 0;
+  color: #f4f4f4;
+  font-family: "Saira", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110%;
+  letter-spacing: -1.2px;
+}
+@media screen and (max-width: 767px) {
+  .banner-content .pl-vwo-video-banner--title {
+    font-size: 40px;
+  }
+}
+.banner-content .pl-vwo-video-banner--title span {
+  color: #ef95cf;
+  font-style: italic;
+  font-weight: 700;
+  font-style: italic;
+}
+.banner-content .pl-vwo-video-banner--social-title {
+  color: #f4f4f4;
+  opacity: 0.8;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+@media screen and (max-width: 767px) {
+  .banner-content .pl-vwo-video-banner--social-title {
+    width: 100%;
+  }
+}
+.banner-content .pl-vwo-video-banner--social {
+  margin: 28px 0 46px 0;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .banner-content .pl-vwo-video-banner--social {
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 22px;
+  }
+}
+.banner-content .pl-vwo-video-banner--social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+@media screen and (max-width: 767px) {
+  .banner-content .pl-vwo-video-banner--social-list.desktop {
+    display: none;
+  }
+}
+.banner-content .pl-vwo-video-banner--social-list.mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .banner-content .pl-vwo-video-banner--social-list.mobile {
+    display: flex;
+  }
+}
+.banner-content .pl-vwo-video-banner--btn {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  padding: 8px 20px;
+  color: #242424;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 150px;
+  border: 1px solid #c0c1ba;
+  background-color: transparent;
+  transition: opacity 0.2s, background-color 0.3s;
+  font-family: "Saira", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+.banner-content .pl-vwo-video-banner--btn:hover::before {
+  opacity: 0;
+}
+.banner-content .pl-vwo-video-banner--btn:hover::after {
+  opacity: 1;
+}
+.banner-content .pl-vwo-video-banner--btn::before {
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #ffc3ea;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.banner-content .pl-vwo-video-banner--btn::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: linear-gradient(to right, #ffc3ea, #fa4616);
+  opacity: 0;
+  transition: opacity 0.3s;
+}/*# sourceMappingURL=pl-vwo-video-banner.css.map */
